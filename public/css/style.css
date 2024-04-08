@@ -84,38 +84,95 @@ body {
 
 /*Footer*/
 
-.f-info-links,
-.f-info-socials,
-.f-info-brand {
-    width: 100%;
+footer {
+    background-color: #343434;
+    padding-top: 50px;
+    color: white;
+}
+.container {
+    width: 1140px;
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
-
-.f-info-socials i {
-    font-size: 1.2rem;
-    margin-right: 1rem;
+.footer-content {
+    width: 33.3%;
 }
-
-.f-info-links a {
-    text-decoration: none;
-    color: #222222;
-}
-
-.f-info-links a:hover {
-    text-decoration: underline;
-}
-
-.f-info {
-    height: 8rem;
-    display: flex;
-    background-color: #ebebeb;
-    flex-wrap: wrap;
-    justify-content: center;
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
     text-align: center;
 }
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul {
+    text-align: center;
+}
+.list {
+    padding: 0;
+}
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+
+}
+.list li:before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #61c0bf;
+    transition-duration: 0.5s;
+}
+.list li:hover::before {
+    width: 70px;
+}
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i {
+    color: white;
+    font-size: 25px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color : #61c0bf;
+}
+.social-icons i:hover {
+    color: #61c0bf;
+}
+.bottom-bar {
+    background-color: #61c0bf;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
 
 /*Cards*/
 
@@ -204,3 +261,4 @@ h3 {
         margin-left: 8%;
     }
 }
+
