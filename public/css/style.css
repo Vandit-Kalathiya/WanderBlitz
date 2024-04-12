@@ -98,13 +98,8 @@ footer {
 .footer-content {
     width: 33.3%;
 }
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
-}
 .footer-content p {
-    width: 190px;
+    width: 250px;
     margin: auto;
     padding: 7px;
 }
@@ -173,6 +168,32 @@ a:hover {
     padding: 7px;
 }
 
+/* Login */
+
+#username, #password, #email {
+    position: relative;
+}
+#username::after,
+#password::after,
+#email::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #61c0bf;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+#username:hover::after,
+#username:focus-within::after,
+#email:hover::after,
+#email:focus-within::after,
+#password:hover::after,
+#password:focus-within::after {
+    transform: scaleX(1);
+}
 
 /*Cards*/
 
@@ -261,4 +282,3 @@ h3 {
         margin-left: 8%;
     }
 }
-
