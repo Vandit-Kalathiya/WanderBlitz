@@ -14,6 +14,10 @@ body {
     padding: 0; */
 }
 
+::selection {
+    background-color: #61c0bf; 
+    color: #FFFFFF;
+}
 /* Navbar */
 
 .navbar {
@@ -194,7 +198,22 @@ a:hover {
 #password:focus-within::after {
     transform: scaleX(1);
 }
-
+::placeholder {
+    padding: 0.5rem;
+}
+input {
+    border-radius: 3px;
+    padding-left: 6px;
+}
+input:focus {
+    border-color: #7dd0ce !important;
+    border-width: 3px; 
+    border-style: solid; 
+    border-radius: 3px;
+    padding: 5px 0;
+    outline: none; 
+    box-shadow: 3px 3px 3px 3px rgba(79, 70, 229, 0.1); 
+}
 /*Cards*/
 
 .listing-card {
